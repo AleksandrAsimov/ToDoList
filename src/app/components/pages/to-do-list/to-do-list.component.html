@@ -1,0 +1,21 @@
+<div class="page">
+  <mat-icon class="exit" (click)="changeUser()">exit_to_app</mat-icon>
+  <div class="page-title">
+    <h1>To Do List</h1>
+    <button mat-raised-button (click)="openDialogAdd()"> + Add New</button>
+  </div>
+
+  <mat-list>
+    <mat-list-item *ngFor="let item of toDos;index as i">
+      <div class="title">
+        <h3>{{item.title}}</h3>
+        <div class="actions">
+          <mat-icon (click)="openDialogView(item)">remove_red_eye</mat-icon>
+          <mat-icon (click)="openDialogEdit(item,i)">edit</mat-icon>
+          <mat-icon (click)="openDialogDelete(i)">delete</mat-icon>
+        </div>
+        <p> {{item.description}} </p>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>

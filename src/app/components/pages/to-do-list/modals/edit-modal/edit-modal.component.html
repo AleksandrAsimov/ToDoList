@@ -1,0 +1,11 @@
+<mat-form-field>
+  <input [(ngModel)]="data.title" matInput placeholder="Title">
+</mat-form-field>
+
+<mat-form-field>
+  <textarea [(ngModel)]="data.description" matInput placeholder="Description"></textarea>
+</mat-form-field>
+<div class="buttons">
+  <button mat-stroked-button [mat-dialog-close]="data" color="primary">Save</button>
+  <button mat-stroked-button (click)="dialogRef.close()" color="warn">Cancel</button>
+</div>

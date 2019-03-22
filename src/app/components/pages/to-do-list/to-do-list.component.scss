@@ -1,0 +1,68 @@
+.page {
+  background: #8360c3;
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+  min-height: 100vh;
+  width: -webkit-fill-available;
+  top: 0;
+  position: absolute;
+
+  .exit {
+    float: right;
+    margin: 10px 20px;
+    font-size: 29px;
+    cursor: pointer;
+  }
+
+  .page-title {
+    width: 90%;
+    margin: auto;
+    background: transparent;
+    height: 85px;
+
+
+    h1 {
+      width: 100%;
+      text-align: -webkit-center;
+    }
+
+    button {
+      float: right;
+    }
+  }
+
+  mat-list {
+    width: 90%;
+    margin: auto;
+    background: transparent;
+
+    mat-list-item {
+      margin: 20px 0;
+      height: auto;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 0 39px black;
+
+      &:hover {
+        box-shadow: 0 0 39px lightblue;
+        cursor: pointer;
+      }
+
+
+      .title {
+        width: 100%;
+
+        h3 {
+          width: calc(100% - 100px);
+          display: inline-block;
+        }
+
+        .actions {
+          width: 100px;
+          display: inline-block;
+        }
+
+      }
+    }
+  }
+}

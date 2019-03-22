@@ -1,0 +1,10 @@
+<div class="page">
+  <div class="example-container">
+    <h1>Login</h1>
+    <mat-form-field appearance="standard">
+      <input id='user_email' matInput placeholder="Enter your email" [formControl]="email" required>
+      <mat-icon *ngIf="!email.invalid" (click)="login()" matSuffix>label_important</mat-icon>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+</div>
